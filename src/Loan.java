@@ -13,9 +13,11 @@ public class Loan {
         System.out.println("Nhap lai suat vay: ");
         intervestRate = sc.nextDouble();
         double total_intervest = 0;
-        for (int i = 0; i < month; i++) {
-            total_intervest = money + (intervestRate/100)/12 * month;
+        for(int i = 0; i < month; i++){
+            total_intervest += money * (intervestRate/100)/12 * month;
+
         }
+
         System.out.println("Tong so tien lai: " + total_intervest);
     }
 }
